@@ -4,8 +4,17 @@
   "description": "Frontendmentor order summary components",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "compile": "sass sass/style.scss css/style.comp.css",
+    "prefix": "postcss --use autoprefixer -b \"last 10 versions\" css/style.comp.css -o css/style.prefix.css",
+    "compress": "node-sass css/style.prefix.css css/style.css --output-style compressed",
+    "delete": "del-cli css/style.comp.css css/style.comp.css.map css/style.prefix.css node_modules",
+    "all": "npm-run-all compile prefix compress delete"
   },
   "author": "Branden Evans",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "del-cli": "^4.0.1",
+    "npm-run-all": "^4.1.5",
+    "sass": "^1.38.2"
+  }
 }
