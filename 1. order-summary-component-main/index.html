@@ -22,37 +22,39 @@
 
     <title>Frontend Mentor | Order summary card</title>
   </head>
-
-  <body>
-    <main>
-      <section class="order-card">
-        <div class="order-card__hero">
-          <img
-            src="images/illustration-hero.svg"
-            alt="Illustration for a person listening to music on their phone with headphones."
-          />
-        </div>
-
-        <div class="order-card__heading">
-          <h1>Order Summary</h1>
-        </div>
-
-        <div class="order-card__info">
-          <p>
-            You can now listen to millions of songs, audiobooks, and podcasts on
-            any device anywhere you like!
-          </p>
-        </div>
-
-        <div class="order-card__plan">
-          <div class="plan__icon">
-            <img src="images/icon-music.svg" alt="" aria-hidden="true" />
+  <div class="flex-container">
+    <body>
+      <main>
+        <section class="order-card">
+          <div class="order-card__hero">
+            <img
+              class="order-card__hero--img"
+              src="images/illustration-hero.svg"
+              alt="Illustration for a person listening to music on their phone with headphones."
+            />
           </div>
-          <div class="plan__cost">
-            <p>Annual Plan $59.99/year</p>
+
+          <div class="order-card__heading u-center-text">
+            <h1>Order Summary</h1>
           </div>
-          <div class="plan__change">
-            <a href="#">Change</a>
+
+          <div class="order-card__info u-center-text">
+            <p>
+              You can now listen to millions of songs, audiobooks, and podcasts
+              on any device anywhere you like!
+            </p>
+          </div>
+
+          <div class="order-card__plan">
+            <div class="order-card__plan--icon">
+              <img src="images/icon-music.svg" alt="" aria-hidden="true" />
+            </div>
+            <div class="order-card__plan--cost">
+              <p>Annual Plan <span class="yearly-cost">$59.99/year</span></p>
+            </div>
+            <div class="order-card__plan--change">
+              <a href="#">Change</a>
+            </div>
           </div>
 
           <div class="btn btn--blue">
@@ -62,17 +64,17 @@
           <div class="btn btn--white">
             <a href="#">Cancel Order</a>
           </div>
-        </div>
-      </section>
-    </main>
-  </body>
+        </section>
+      </main>
+    </body>
 
-  <footer>
-    <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Branden Evans</a>.
-    </div>
-  </footer>
+    <footer>
+      <div class="footer u-center-text">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Branden Evans</a>
+      </div>
+    </footer>
+  </div>
 </html>
