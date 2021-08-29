@@ -1,0 +1,52 @@
+*,
+*::after *::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+* {
+  font-family: "Red Hat Display", sans-serif;
+}
+
+p {
+  font-size: 1.6rem;
+}
+
+.u-center-text {
+  text-align: center;
+}
+
+.u-margin-bottom-small {
+  margin-bottom: 1.5rem;
+}
+
+.u-margin-bottom-medium {
+  margin-bottom: 4rem;
+}
+
+.u-margin-bottom-large {
+  margin-bottom: 8rem;
+}
+
+.u-margin-top-large {
+  margin-top: 8rem;
+}
+
+.margin-top-huge {
+  margin-top: 10rem;
+}
+
+/*# sourceMappingURL=style.css.map */
