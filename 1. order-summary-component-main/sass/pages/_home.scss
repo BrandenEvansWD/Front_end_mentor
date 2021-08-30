@@ -1,3 +1,5 @@
+@use "../abstracts" as *;
+
 html {
   background-image: url(../images/pattern-background-mobile.svg);
   background-color: $primary-light;
@@ -12,13 +14,16 @@ html {
   }
 }
 
+body {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 2rem;
+}
+
 .flex-container {
   height: 100%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  margin: 2rem auto 0;
   min-width: 300px;
   max-width: 500px;
 }

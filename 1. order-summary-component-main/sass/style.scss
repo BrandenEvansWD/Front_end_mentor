@@ -1,9 +1,7 @@
-@use "abstracts/variables";
+@use "abstracts";
 
-@import "base/base";
-@import "base/typography";
-@import "base/utilities";
+@use "base";
 
-@import "components/card";
+@use "components/card";
 
-@import "pages/home";
+@use "pages/home";

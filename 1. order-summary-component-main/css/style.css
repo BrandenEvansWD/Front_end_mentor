@@ -109,34 +109,37 @@ p {
   color: #6358df;
   text-decoration: none;
 }
-.order-card .btn {
+.order-card .btn__container {
   text-align: center;
-  padding: 1.5rem;
+}
+.order-card .btn__container .btn {
+  text-align: center;
   margin: 0 2rem 1rem;
   border-radius: 1.5rem;
-}
-.order-card .btn a {
   font-size: 1.5rem;
+}
+.order-card .btn__container .btn a {
   font-weight: 700;
 }
-.order-card .btn--blue {
+.order-card .btn__container .btn--blue {
   background-color: #3829e0;
   box-shadow: 0 1rem 1rem rgba(56, 41, 224, 0.2);
 }
-.order-card .btn--blue a {
+.order-card .btn__container .btn--blue a {
+  display: block;
   color: #e0e8ff;
+  padding: 1.5rem;
 }
-.order-card .btn--blue:hover {
+.order-card .btn__container .btn--blue:hover {
   background-color: #6358df;
   box-shadow: 0 1rem 1rem rgba(99, 88, 223, 0.4);
 }
-.order-card .btn--white {
-  margin-bottom: 1.5rem;
-}
-.order-card .btn--white a {
+.order-card .btn__container .btn--white {
   color: #787878;
+  display: inline-block;
+  margin: 1rem 0 2rem;
 }
-.order-card .btn--white a:hover {
+.order-card .btn__container .btn--white:hover {
   color: #3c3c3c;
 }
 
@@ -155,13 +158,16 @@ html {
   }
 }
 
+body {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 2rem;
+}
+
 .flex-container {
   height: 100%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  margin: 2rem auto 0;
   min-width: 300px;
   max-width: 500px;
 }
