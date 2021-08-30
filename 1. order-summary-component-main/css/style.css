@@ -1,1 +1,177 @@
-*,*::after *::before{margin:0;padding:0;box-sizing:inherit}html{font-size:62.5%;margin:0;padding:0}body{box-sizing:border-box;margin:0;padding:0}a{text-decoration:none}*{font-family:"Red Hat Display", sans-serif}p{font-size:1.6rem}.u-center-text{text-align:center}.order-card{overflow:hidden;width:100%;max-width:450px;background-color:#f5f7ff;border-radius:2.5rem}.order-card__hero{-o-object-fit:cover;object-fit:cover;margin-bottom:3rem}.order-card__hero--img{height:16rem;width:100%}.order-card__heading{font-size:1.6rem}.order-card__info{color:#969696;line-height:2.5rem;padding:0 3rem}.order-card__plan{background-color:#f0f0fa;margin:2.5rem;border-radius:1.5rem;padding:1rem 1.5rem;display:flex;justify-content:space-between;align-items:center}@media (max-width: 500px){.order-card__plan{flex-direction:column}}.order-card__plan--icon{margin-right:1.5rem}@media (max-width: 500px){.order-card__plan--icon{margin-right:0;margin-bottom:-1rem}}.order-card__plan--cost{font-weight:700;width:8rem;margin-right:auto;text-align:center}@media (max-width: 500px){.order-card__plan--cost{margin-right:0}}.order-card__plan--cost p{font-size:1.4rem}.order-card__plan--cost .yearly-cost{font-weight:500;color:#969696}.order-card__plan--change{font-size:1.4rem;font-weight:700}.order-card__plan--change a{color:#3829e0;text-decoration:underline}.order-card__plan--change a:hover{color:#6358df;text-decoration:none}.order-card .btn{text-align:center;padding:1.5rem;margin:0 2rem 1rem;border-radius:1.5rem}.order-card .btn a{font-size:1.5rem;font-weight:700}.order-card .btn--blue{background-color:#3829e0;box-shadow:0 1rem 1rem rgba(56,41,224,0.2)}.order-card .btn--blue a{color:#e0e8ff}.order-card .btn--blue:hover{background-color:#6358df;box-shadow:0 1rem 1rem rgba(99,88,223,0.4)}.order-card .btn--white{margin-bottom:1.5rem}.order-card .btn--white a{color:#787878}.order-card .btn--white a:hover{color:#3c3c3c}html{background-image:url(../images/pattern-background-mobile.svg);background-color:#e0e8ff;background-repeat:no-repeat;background-size:100%;height:100vh;width:100%;position:relative}@media (min-width: 966px){html{background-image:url(../images/pattern-background-desktop.svg);background-size:100%}}.flex-container{position:absolute;top:50%;left:50%;transform:translate(-50%, -50%);margin:1rem auto 0;min-width:300px;max-width:500px}.footer{font-size:1.2rem;margin-top:1rem}.footer a{color:#3829e0}
+*,
+*::after *::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+* {
+  font-family: "Red Hat Display", sans-serif;
+}
+
+p {
+  font-size: 1.6rem;
+}
+
+.u-center-text {
+  text-align: center;
+}
+
+.order-card {
+  overflow: hidden;
+  width: 100%;
+  max-width: 450px;
+  background-color: #f5f7ff;
+  border-radius: 2.5rem;
+}
+.order-card__hero {
+  object-fit: cover;
+  margin-bottom: 3rem;
+}
+.order-card__hero--img {
+  height: 16rem;
+  width: 100%;
+}
+.order-card__heading {
+  font-size: 1.6rem;
+}
+.order-card__info {
+  color: #969696;
+  line-height: 2.5rem;
+  padding: 0 3rem;
+}
+.order-card__plan {
+  background-color: #f0f0fa;
+  margin: 2.5rem;
+  border-radius: 1.5rem;
+  padding: 1rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 500px) {
+  .order-card__plan {
+    flex-direction: column;
+  }
+}
+.order-card__plan--icon {
+  margin-right: 1.5rem;
+}
+@media (max-width: 500px) {
+  .order-card__plan--icon {
+    margin-right: 0;
+    margin-bottom: -1rem;
+  }
+}
+.order-card__plan--cost {
+  font-weight: 700;
+  width: 8rem;
+  margin-right: auto;
+  text-align: center;
+}
+@media (max-width: 500px) {
+  .order-card__plan--cost {
+    margin-right: 0;
+  }
+}
+.order-card__plan--cost p {
+  font-size: 1.4rem;
+}
+.order-card__plan--cost .yearly-cost {
+  font-weight: 500;
+  color: #969696;
+}
+.order-card__plan--change {
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+.order-card__plan--change a {
+  color: #3829e0;
+  text-decoration: underline;
+}
+.order-card__plan--change a:hover {
+  color: #6358df;
+  text-decoration: none;
+}
+.order-card .btn {
+  text-align: center;
+  padding: 1.5rem;
+  margin: 0 2rem 1rem;
+  border-radius: 1.5rem;
+}
+.order-card .btn a {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.order-card .btn--blue {
+  background-color: #3829e0;
+  box-shadow: 0 1rem 1rem rgba(56, 41, 224, 0.2);
+}
+.order-card .btn--blue a {
+  color: #e0e8ff;
+}
+.order-card .btn--blue:hover {
+  background-color: #6358df;
+  box-shadow: 0 1rem 1rem rgba(99, 88, 223, 0.4);
+}
+.order-card .btn--white {
+  margin-bottom: 1.5rem;
+}
+.order-card .btn--white a {
+  color: #787878;
+}
+.order-card .btn--white a:hover {
+  color: #3c3c3c;
+}
+
+html {
+  background-image: url(../images/pattern-background-mobile.svg);
+  background-color: #e0e8ff;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 100%;
+  position: relative;
+}
+@media (min-width: 966px) {
+  html {
+    background-image: url(../images/pattern-background-desktop.svg);
+    background-size: 100%;
+  }
+}
+
+.flex-container {
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 2rem auto 0;
+  min-width: 300px;
+  max-width: 500px;
+}
+
+.footer {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+}
+.footer a {
+  color: #3829e0;
+}
+
+/*# sourceMappingURL=style.css.map */
