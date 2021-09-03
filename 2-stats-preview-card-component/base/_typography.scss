@@ -1,7 +1,49 @@
-/**
- * Basic typography style for copy text
- */
+@use "../abstracts/variables";
+
+// Typography styles for body text
+
 body {
-  color: $text-color;
-  font: normal 125% / 1.4 $text-font-stack;
+  color: $font-color-copy;
+  font-size: 15px;
+  font-family: 'Lexend Deca', sans-serif;
+  font-weight: 400;
+}
+
+.header {
+  color: $font-color-main;
+  font-family: 'Inter', sans-serif;
+  font-size: 3rem;
+  font-weight: 700;
+
+  .color-accent {
+    color: $color-primary;
+  }
+}
+
+.mission {
+  line-height: 2.5rem;
+}
+
+.stats__stat {
+  font-size: 2.5rem;
+  color: $font-color-main;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+}
+
+.stats__header {
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+  margin-bottom: 3rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+
+  a {
+    color: hsl(228, 45%, 44%);
+  }
 }

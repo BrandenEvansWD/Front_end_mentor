@@ -1,3 +1,14 @@
-// -----------------------------------------------------------------------------
-// This file contains styles that are specific to the home page.
-// -----------------------------------------------------------------------------
+// Contains styles specific to the homepage
+
+body {
+  background-color: $color-tertiary;
+  width: 100%;
+  padding: 8rem 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  width: 325px;
+}

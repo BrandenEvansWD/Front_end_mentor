@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
 
     <link
       rel="icon"
@@ -12,51 +11,43 @@
       href="./images/favicon-32x32.png"
     />
 
+    <link rel="stylesheet" href="style.css" />
+
     <title>Frontend Mentor | Stats preview card component</title>
-    <link rel="stylesheet" href="" />
   </head>
   <body>
-    <div class="card__container">
-      <div class="grid">
-        <div class="card">
-          <div class="card__img">
-            <img src="" alt="" />
+    <main>
+      <div class="card-container">
+        <div class="hero-img"></div>
+
+        <div class="content-container">
+          <h1 class="header">
+            Get <span class="color-accent">insights</span> that help your
+            business grow.
+          </h1>
+          <div class="mission">
+            Discover the benefits of data analytics and make better decisions
+            regarding revenue, customer experience, and overall efficiency.
           </div>
 
-          <div class="card__header">
-            <h1>
-              Get
-              <span class="card_header_accent">insights</span>
-              that help your business grow.
-            </h1>
-          </div>
-
-          <div class="card__mission">
-            <p>
-              Discover the benefits of data analytics and make better decisions
-              regarding revenue, customer experience, and overall efficiency.
-            </p>
-          </div>
-
-          <div class="card__stats">
-            <h2 class="card__stats--companies">10k&#43;</h2>
-            <p class="card__stats--metric">Companies</p>
-
-            <h2 class="card__stats--companies">314</h2>
-            <p class="card__stats--metric">Templates</p>
-
-            <h2 class="card__stats--companies">12m&#43;</h2>
-            <p class="card__stats--metric">Metrics</p>
+          <div class="stats__container">
+            <div class="stats__stat">10k+</div>
+            <h2 class="stats__header">companies</h2>
+            <div class="stats__stat">314</div>
+            <h2 class="stats__header">templates</h2>
+            <div class="stats__stat">12m+</div>
+            <h2 class="stats__header">queries</h2>
           </div>
         </div>
       </div>
-    </div>
-
-    <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
-    </div>
+      <footer>
+        <div class="attribution">
+          Challenge by
+          <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+            >Frontend Mentor</a
+          >. Coded by <a href="#">Branden Evans</a>.
+        </div>
+      </footer>
+    </main>
   </body>
 </html>
