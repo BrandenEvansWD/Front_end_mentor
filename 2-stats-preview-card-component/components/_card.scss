@@ -1,12 +1,23 @@
 //card styles
 body {
   position: relative;
+  min-height: 100vh;
+
+  @media only screen and (min-width: 1200px) {
+    display: flex;
+    flex-direction: row-reverse;
+  }
 }
 .card-container {
   background-color: $color-secondary;
   border-radius: 0.7rem;
   text-align: center;
   overflow: hidden;
+
+  @media only screen and (min-width: 1200px) {
+    display: flex;
+    flex-direction: row-reverse;
+  }
 }
 
 .hero-img {
@@ -16,17 +27,59 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   filter: brightness(60%);
-  background-position: center;
+  background-position: right;
 
   height: 24rem;
+
+  @media only screen and (min-width: 1200px) {
+    width: 55%;
+    height: 42rem;
+    background-position: center;
+  }
 }
 
 .content-container {
   padding: 1rem;
+
+  @media only screen and (min-width: 1200px) {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    padding: 0 2rem;
+    margin-left: 4rem;
+    margin-right: 2rem;
+  }
 }
 
 .stats__container {
   margin-top: 4rem;
+  padding-top: 2rem;
+
+  @media only screen and (min-width: 1200px) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  &--comp {
+    @media only screen and (min-width: 1200px) {
+      display: flex;
+      flex-direction: column;
+      margin-right: 5rem;
+
+      // &:not(:last-child) {
+      //   margin-right: 5rem;
+      // }
+    }
+  }
+}
+
+footer {
+  display: flex;
+  justify-content: center;
 }
 
 .attribution {

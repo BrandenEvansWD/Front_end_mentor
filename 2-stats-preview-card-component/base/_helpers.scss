@@ -1,8 +1,0 @@
-// Contains css helper classes
-
-// Clear float
-.clearfix::after {
-  clear: both;
-  content: '';
-  display: table;
-}

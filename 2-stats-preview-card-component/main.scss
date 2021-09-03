@@ -8,22 +8,17 @@
 // Base
 @import 'base/base';
 @import 'base/fonts';
-@import 'base/helpers';
 @import 'base/typography';
 
 // Components
-@import 'components/button';
 @import 'components/card';
 
 // Layout
-@import 'layout/footer';
-@import 'layout/header';
 
 // Pages
 @import 'pages/home';
 
 // Themes
-@import 'themes/default';
 
 // Vendors
 @import 'vendors/normalize';

@@ -4,10 +4,10 @@
   "description": "-",
   "main": "index.js",
   "scripts": {
-    "compile": "sass style.scss style.comp.css",
-    "compile-watch": "sass style.scss style.comp.css --watch",
+    "compile": "sass main.scss style.comp.css",
+    "compile-watch": "sass main.scss style.comp.css --watch",
     "prefix": "postcss --use autoprefixer -b \"last 10 versions\" style.comp.css -o style.prefix.css",
-    "compress": "sass style.prefix.css style.css --output-style compressed",
+    "compress": "sass style.prefix.css style.css --style compressed",
     "delete": "del-cli style.comp.css style.comp.css.map style.prefix.css",
     "all": "npm-run-all compile prefix compress delete"
   },
