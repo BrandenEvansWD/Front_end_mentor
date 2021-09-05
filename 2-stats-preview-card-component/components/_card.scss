@@ -21,7 +21,7 @@ body {
 }
 
 .hero-img {
-  background-image: url(/2-stats-preview-card-component/images/image-header-mobile.jpg);
+  background-image: url(../images/image-header-mobile.jpg);
   background-color: $color-primary;
   background-blend-mode: luminosity;
   background-size: cover;
@@ -32,7 +32,7 @@ body {
   height: 24rem;
 
   @media only screen and (min-width: 1200px) {
-    background-image: url(/2-stats-preview-card-component/images/image-header-desktop.jpg);
+    background-image: url(../images/image-header-desktop.jpg);
     width: 55%;
     height: 42rem;
     background-position: center;
