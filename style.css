@@ -9,6 +9,7 @@ html {
   background-position: bottom;
   background-size: cover;
   background-attachment: fixed;
+  overflow: hidden;
 }
 
 *,
@@ -57,11 +58,15 @@ header h1 .accent--2 {
   margin: 1rem;
   border-radius: 1rem;
   overflow: hidden;
-  transition: 0.5s ease transform;
+  transition: ease-in all;
+  z-index: 1;
+  transition-duration: 0.3s, 0s;
+  transition-delay: 0s, 1s;
 }
 .card:hover {
-  transform: scale(1.3) rotateZ(15deg);
-  z-index: 2;
+  transform: scale(1.2) rotateZ(20deg);
+  z-index: 4;
+  transition-delay: 0s, 0s;
 }
 .card__header {
   text-align: center;
